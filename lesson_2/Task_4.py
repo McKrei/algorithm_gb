@@ -4,7 +4,7 @@
 
 def summa(number):
     n = sum_ = 1
-    for i in range(number):
+    for _ in range(number):
         n /= -2
         sum_ += n
     return sum_

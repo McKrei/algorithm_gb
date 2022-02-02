@@ -4,8 +4,7 @@
 '''
 count_pos = int(input('Введите количество чисел: '))
 number = int(input('Введите цифру которую ищем: '))
-count = 0
-task_9_sum_max = task_9_sum = 0
+count = task_9_sum_max = task_9_sum = 0
 
 while count_pos > 0:
     pos = input('Введите последовательность чисел: ')
@@ -14,9 +13,9 @@ while count_pos > 0:
         task_9_sum += n
         if n == number:
             count += 1
-    count_pos -= 1
     if task_9_sum > task_9_sum_max:
         task_9_sum_max = task_9_sum
+    count_pos -= 1    
 print(count, 'встречалась цифра', number)
 
 '''

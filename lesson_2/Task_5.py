@@ -10,3 +10,4 @@ for i in range(32, 128):
     if count %10 == 0:
         print(s)
         s = ''
+print(s)
