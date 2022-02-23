@@ -17,7 +17,7 @@ def func(count, n=1, sum_=1):
     return func(count-1, n, sum_)
 
 cProfile.run('func(100)')
-
+print(func(100))
 # 1000 loops, best of 5: 1.35 usec per loop 10
 # 1000 loops, best of 5: 14 usec per loop 100
 # Ошибка глубины рекурсии RecursionError loop 10_000 

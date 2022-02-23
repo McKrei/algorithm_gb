@@ -7,12 +7,12 @@ def create_n_files(number_files):
 	ind = 1
 	while number_files >= ind:
 		try:
-			with open(f"lesson_3\Task_{ind}.py", "w") as file_obj: #путь до папки и имя файла-ов!
+			with open(f"lesson_7\Task_{ind}.py", "w") as file_obj: #путь до папки и имя файла-ов!
 				file_obj.write(f"'''\nText task {ind} \n'''\n") #Текст в файлах, можно удалить
 			print(f'Файл №{ind} создан!')
 		
 			ind += 1 
 		except IOError:
 			print('Ошибка ввода-вывода!')	
-create_n_files(9)
+create_n_files(3)
 
